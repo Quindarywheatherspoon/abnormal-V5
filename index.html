@@ -1,143 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abnormal Website</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        background: linear-gradient(to bottom, #0d0d0d, #000);
-        color: #e0e0e0;
-        font-family: "Poppins", sans-serif;
-        text-align: center;
-        margin: 0;
-      }
-
-      header {
-        background: url("https://image.jimcdn.com/app/cms/image/transf/none/path/s3af625099d90939c/backgroundarea/if50eed824404e4f5/version/1727733415/image.jpg")
-          center/cover no-repeat;
-        padding: 100px 20px;
-        font-size: clamp(2.5rem, 5vw, 4rem);
-        color: white;
-        position: relative;
-        text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
-      }
-
-      .header-text {
-        background: rgba(0, 0, 0, 0.85); /* Made it darker */
-        backdrop-filter: blur(10px);
-        display: inline-block;
-        padding: 25px 50px;
-        border-radius: 15px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-      }
-
-      .header-text span {
-        color: white;
-        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
-      }
-
-      .header-text .ab,
-      .header-text .web {
-        color: #870087; /* Darker purple */
-        text-shadow: 0 0 20px rgba(135, 0, 135, 1);
-      }
-
-      nav {
-        background: rgba(
-          80,
-          0,
-          80,
-          0.9
-        ); /* Darker purple for better contrast */
-        padding: 15px;
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        backdrop-filter: blur(5px);
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: 600;
-        padding: 12px 30px;
-        border-radius: 10px;
-        transition: 0.3s ease-in-out;
-        background: rgba(255, 255, 255, 0.2);
-      }
-
-      nav a:hover {
-        background: rgba(255, 255, 255, 0.4);
-        transform: scale(1.08);
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-      }
-
-      section {
-        margin: 40px auto;
-        padding: 30px;
-        border: 2px solid #870087;
-        border-radius: 12px;
-        box-shadow: 0 0 20px rgba(135, 0, 135, 0.6);
-        background: linear-gradient(to bottom, #220022, #000);
-        max-width: 80ch;
-        font-size: 1.2rem;
-      }
-
-      section p {
-        margin-bottom: 15px;
-        font-weight: 300;
-      }
-
-      a {
-        color: #870087;
-        text-decoration: none;
-        font-weight: 600;
-        transition: 0.3s;
-      }
-
-      a:hover {
-        text-decoration: underline;
-        transform: scale(1.1);
-      }
-
-      @media (max-width: 600px) {
-        .header-text {
-          font-size: 1.8rem;
-          padding: 20px;
-        }
-        nav {
-          flex-direction: column;
-          gap: 10px;
-        }
-      }
-    </style>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
     <header>
-      <div class="header-text">
-        <span class="ab">Ab</span>normal <span class="web">Web</span>site
-      </div>
+        <div class="header-text">
+            <span class="ab">Ab</span>normal <span class="web">Web</span>site
+        </div>
     </header>
 
     <nav>
-      <a href="index.html">Home</a>
-      <a href="update-logs.html">Update Logs</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="update-logs.html">Update Logs</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <section>
-      <p>The lungs continue to burn.</p>
-      <p>The voices get softer.</p>
-      <a href="#">The Potato God will descend.</a>
+        <p>The lungs continue to burn.</p>
+        <p>The voices get softer.</p>
+        <a href="#">The Potato God will descend.</a>
     </section>
-  </body>
+</body>
 </html>
