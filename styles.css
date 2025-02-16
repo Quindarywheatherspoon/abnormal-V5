@@ -1,103 +1,159 @@
 body {
-    background: linear-gradient(to bottom, #0d0d0d, #000);
-    color: #e0e0e0;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    margin: 0;
+  background: linear-gradient(to bottom, #0d0d0d, #000);
+  color: #e0e0e0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
 }
 
 header {
-    background: url("https://image.jimcdn.com/app/cms/image/transf/none/path/s3af625099d90939c/backgroundarea/if50eed824404e4f5/version/1727733415/image.jpg") center/cover no-repeat;
-    padding: 70px 20px; /* Reduced padding */
-    font-size: clamp(1.8rem, 4vw, 3rem); /* Smaller text */
-    color: white;
-    position: relative;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
+  background: url("https://image.jimcdn.com/app/cms/image/transf/none/path/s3af625099d90939c/backgroundarea/if50eed824404e4f5/version/1727733415/image.jpg")
+    center/cover no-repeat;
+  padding: 70px 20px; /* Reduced padding */
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Smaller text */
+  color: white;
+  position: relative;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
 }
 
 .header-text {
-    background: rgba(0, 0, 0, 0.85); /* Dark background */
-    backdrop-filter: blur(10px);
-    display: inline-block;
-    padding: 15px 30px; /* Smaller padding */
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85); /* Dark background */
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  padding: 15px 30px; /* Smaller padding */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .header-text span {
-    color: white;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+  color: white;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
 }
 
 .header-text .ab,
 .header-text .web {
-    color: #870087; /* Dark purple */
-    text-shadow: 0 0 20px rgba(135, 0, 135, 1);
+  color: #870087; /* Dark purple */
+  text-shadow: 0 0 20px rgba(135, 0, 135, 1);
 }
 
 nav {
-    background: rgba(80, 0, 80, 0.9); /* Dark purple */
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(5px);
+  background: rgba(80, 0, 80, 0.9); /* Dark purple */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 12px 30px;
-    border-radius: 10px;
-    transition: 0.3s ease-in-out;
-    background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(1.08);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.08);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 section {
-    margin: 40px auto;
-    padding: 30px;
-    border: 2px solid #870087;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(135, 0, 135, 0.6);
-    background: linear-gradient(to bottom, #220022, #000);
-    max-width: 80ch;
-    font-size: 1.2rem;
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid #870087;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(135, 0, 135, 0.6);
+  background: linear-gradient(to bottom, #220022, #000);
+  max-width: 80ch;
+  font-size: 1.2rem;
 }
 
 section p {
-    margin-bottom: 15px;
-    font-weight: 300;
+  margin-bottom: 15px;
+  font-weight: 300;
 }
 
 a {
-    color: #870087;
-    text-decoration: none;
-    font-weight: 600;
-    transition: 0.3s;
+  color: #870087;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
-    transform: scale(1.1);
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
+/* New Styling for the Text Box */
+.text-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.text-box p {
+  font-size: 1.2rem;
+}
+
+.text-box a {
+  color: #870087;
+  font-weight: bold;
+}
+
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.button p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1; 
+}
+
+
 @media (max-width: 600px) {
-    .header-text {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-    }
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .button {
+    width: 100px;
+    height: 100px;
+  }
+
+  .button p {
+    font-size: 1rem;
+  }
+
+  .button-box {
+    flex-direction: column;
+  }
 }
