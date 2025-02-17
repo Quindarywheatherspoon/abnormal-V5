@@ -1,72 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("button-10-minutes")
-    .addEventListener("click", function () {
-      const newTab = window.open("about:blank", "_blank");
-      newTab.document.body.style.margin = "0";
-      newTab.document.body.style.padding = "0";
+document.addEventListener("DOMContentLoaded", () => {
+  const games = {
+    "button-10-minutes": "https://abnormal-hosting.netlify.app/10-minutes-till-dawn/index.html",
+    "button-2048": "https://abnormal-hosting.netlify.app/2048/index.html",
+    "button-bitlife": "https://abnormal-hosting.netlify.app/bitlife/index.html",
+    "button-tboi": "https://isaac-but-abnormal.netlify.app/",
+  };
 
-      const objectTag = document.createElement("object");
-      objectTag.data =
-        "https://abnormal-hosting.netlify.app/10-minutes-till-dawn/index.html";
-      objectTag.type = "text/html";
-      objectTag.style.width = "100%";
-      objectTag.style.height = "100vh";
-
-      newTab.document.body.appendChild(objectTag);
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document.getElementById("button-2048").addEventListener("click", function () {
+  const openGameInNewTab = (url) => {
     const newTab = window.open("about:blank", "_blank");
-    newTab.document.body.style.margin = "0";
-    newTab.document.body.style.padding = "0";
+    if (!newTab) {
+      alert("Popup blocked! Please allow popups for this site.");
+      return;
+    }
 
-    const objectTag = document.createElement("object");
-    objectTag.data = "https://abnormal-hosting.netlify.app/2048/index.html";
-    objectTag.type = "text/html";
-    objectTag.style.width = "100%";
-    objectTag.style.height = "100vh";
+    Object.assign(newTab.document.body.style, { margin: "0", padding: "0" });
+
+    const objectTag = Object.assign(document.createElement("object"), {
+      data: url,
+      type: "text/html",
+      style: "width: 100%; height: 100vh;",
+    });
 
     newTab.document.body.appendChild(objectTag);
+  };
+
+  Object.entries(games).forEach(([buttonId, url]) => {
+    const button = document.getElementById(buttonId);
+    if (button) button.addEventListener("click", () => openGameInNewTab(url));
   });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("button-bitlife")
-    .addEventListener("click", function () {
-      const newTab = window.open("about:blank", "_blank");
-      newTab.document.body.style.margin = "0";
-      newTab.document.body.style.padding = "0";
-
-      const objectTag = document.createElement("object");
-      objectTag.data =
-        "https://abnormal-hosting.netlify.app/bitlife/index.html";
-      objectTag.type = "text/html";
-      objectTag.style.width = "100%";
-      objectTag.style.height = "100vh";
-
-      newTab.document.body.appendChild(objectTag);
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("button-binding")
-    .addEventListener("click", function () {
-      const newTab = window.open("about:blank", "_blank");
-      newTab.document.body.style.margin = "0";
-      newTab.document.body.style.padding = "0";
-
-      const objectTag = document.createElement("object");
-      objectTag.data =
-        "https://isaac-but-abnormal.netlify.app/";
-      objectTag.type = "text/html";
-      objectTag.style.width = "100%";
-      objectTag.style.height = "100vh";
-
-      newTab.document.body.appendChild(objectTag);
-    });
 });
