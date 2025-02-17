@@ -9,18 +9,18 @@ body {
 header {
   background: url("https://image.jimcdn.com/app/cms/image/transf/none/path/s3af625099d90939c/backgroundarea/if50eed824404e4f5/version/1727733415/image.jpg")
     center/cover no-repeat;
-  padding: 70px 20px; /* Reduced padding */
-  font-size: clamp(1.8rem, 4vw, 3rem); /* Smaller text */
+  padding: 70px 20px;
+  font-size: clamp(1.8rem, 4vw, 3rem);
   color: white;
   position: relative;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.9);
 }
 
 .header-text {
-  background: rgba(0, 0, 0, 0.85); /* Dark background */
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(10px);
   display: inline-block;
-  padding: 15px 30px; /* Smaller padding */
+  padding: 15px 30px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
@@ -32,12 +32,12 @@ header {
 
 .header-text .ab,
 .header-text .web {
-  color: #870087; /* Dark purple */
+  color: #870087;
   text-shadow: 0 0 20px rgba(135, 0, 135, 1);
 }
 
 nav {
-  background: rgba(80, 0, 80, 0.9); /* Dark purple */
+  background: rgba(80, 0, 80, 0.9);
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -92,7 +92,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-/* New Styling for the Text Box */
 .text-box {
   background: rgba(255, 255, 255, 0.1);
   padding: 20px;
@@ -109,18 +108,17 @@ a:hover {
   font-weight: bold;
 }
 
-/* Button Box Styling */
 .button-box {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  flex-wrap: wrap;
 }
 
 .button {
-  width: 150px; /* Fixed width */
-  height: 150px; /* Fixed height */
-  background-size: cover; /* Ensure the background image covers the button's area */
+  width: 150px;
+  height: 150px;
+  background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -128,7 +126,7 @@ a:hover {
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  overflow: hidden; /* Ensure the image doesn't overflow the button */
+  overflow: hidden;
 }
 
 .button p {
@@ -136,24 +134,23 @@ a:hover {
   font-weight: bold;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.5); /* Slight transparent black overlay */
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 5px;
-  z-index: 1; /* Make sure text is above the background */
+  z-index: 1;
 }
 
-/* Button styling adjustments for smaller screens */
 @media (max-width: 600px) {
   .button {
-    width: 100px; /* Adjust width for smaller screens */
-    height: 100px; /* Adjust height for smaller screens */
+    width: 100px;
+    height: 100px;
   }
 
   .button p {
-    font-size: 1rem; /* Adjust text size */
+    font-size: 1rem;
   }
 
   .button-box {
-    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    flex-direction: column;
   }
 }
