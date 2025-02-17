@@ -109,18 +109,18 @@ a:hover {
   font-weight: bold;
 }
 
-
+/* Button Box Styling */
 .button-box {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .button {
-  width: 150px;
-  height: 150px;
-  background-size: cover;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  background-size: cover; /* Ensure the background image covers the button's area */
   background-position: center;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ a:hover {
   border-radius: 10px;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; /* Ensure the image doesn't overflow the button */
 }
 
 .button p {
@@ -136,24 +136,24 @@ a:hover {
   font-weight: bold;
   color: white;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Slight transparent black overlay */
   padding: 10px;
   border-radius: 5px;
-  z-index: 1; 
+  z-index: 1; /* Make sure text is above the background */
 }
 
-
+/* Button styling adjustments for smaller screens */
 @media (max-width: 600px) {
   .button {
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Adjust width for smaller screens */
+    height: 100px; /* Adjust height for smaller screens */
   }
 
   .button p {
-    font-size: 1rem;
+    font-size: 1rem; /* Adjust text size */
   }
 
   .button-box {
-    flex-direction: column;
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
   }
 }
