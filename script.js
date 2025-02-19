@@ -32,18 +32,19 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: ". Oh Yeah Musa!!!",
-      id: "button-musa-1",
+      id: "button-musa-1", // Fixed duplicate ID
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://musa.com",
     },
     {
       name: ".. Do That UI!!!",
-      id: "button-musa-2",
+      id: "button-musa-2", // Fixed duplicate ID
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://musa.com",
     },
   ];
 
+  // Sort games alphabetically
   games.sort((a, b) => a.name.localeCompare(b.name));
 
   const buttonBox = document.querySelector(".button-box");
@@ -60,7 +61,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     button.appendChild(text);
     button.addEventListener("click", () => {
-      window.open(game.url, "_blank");
+      const newTab = window.open("about:blank", "_blank");
+      if (newTab) {
+        newTab.document.write(`
+          <html>
+            <head>
+              <title>${game.name}</title>
+              <style>
+                body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+                object { width: 100%; height: 100vh; border: none; }
+              </style>
+            </head>
+            <body>
+              <object data="${game.url}" type="text/html"></object>
+            </body>
+          </html>
+        `);
+        newTab.document.close();
+      } else {
+        alert("Popup blocked! Please allow popups for this site.");
+      }
     });
 
     buttonBox.appendChild(button);
