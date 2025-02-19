@@ -59,17 +59,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = document.createElement("p");
     text.textContent = game.name;
 
-    button.appendChild(text);
-    button.addEventListener("click", () => {
-      const newTab = window.open("about:blank", "_blank");
-      const iframe = newTab.document.createElement("iframe");
-      iframe.src = game.url;
-      iframe.style.width = "100%";
-      iframe.style.height = "100vh";
-      iframe.style.border = "none";
-      newTab.document.body.style.margin = "0";
-      newTab.document.body.style.padding = "0";
-      newTab.document.body.appendChild(iframe);
+button.appendChild(text);
+button.addEventListener("click", () => {
+  const newTab = window.open("about:blank", "_blank");
+  const object = newTab.document.createElement("object");
+  object.data = game.url;
+  object.type = "text/html";
+  object.style.width = "100%";
+  object.style.height = "100vh";
+  object.style.border = "none";
+  newTab.document.body.style.margin = "0";
+  newTab.document.body.style.padding = "0";
+  newTab.document.body.appendChild(object);
+});
+
     });
 
     buttonBox.appendChild(button);
