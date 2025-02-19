@@ -4,25 +4,25 @@ document.addEventListener("DOMContentLoaded", () => {
       name: "10 Minutes Till Dawn",
       id: "button-10-minutes",
       img: "https://abnormal-alt-hosting.netlify.app/10-minutes-till-dawn.webp",
-      url: "https://abnormal-hosting.netlify.app/10-minutes-till-dawn/index.html",
+      url: "https://abnormal-hosting.netlify.app/10-minutes-till-dawn/",
     },
     {
       name: "2048",
       id: "button-2048",
       img: "https://abnormal-alt-hosting.netlify.app/2048.png",
-      url: "https://abnormal-hosting.netlify.app/2048/index.html",
+      url: "https://abnormal-hosting.netlify.app/2048/",
     },
     {
       name: "A Dark Room",
       id: "button-a-dark-room",
       img: "https://abnormal-alt-hosting.netlify.app/adr.png",
-      url: "https://abnormal-hosting.netlify.app/adarkroom/index.html",
+      url: "https://abnormal-hosting.netlify.app/adarkroom/",
     },
     {
       name: "Bitlife",
       id: "button-bitlife",
       img: "https://abnormal-alt-hosting.netlify.app/Bitlife.png",
-      url: "https://abnormal-hosting.netlify.app/bitlife/index.html",
+      url: "https://abnormal-hosting.netlify.app/bitlife/",
     },
     {
       name: "Binding of Isaac",
@@ -32,16 +32,47 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: ". Oh Yeah Musa!!!",
-      id: "button-musa-1", // Fixed duplicate ID
+      id: "button-musa-1",
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://musa.com",
     },
     {
       name: ".. Do That UI!!!",
-      id: "button-musa-2", // Fixed duplicate ID
+      id: "button-musa-2",
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://musa.com",
     },
+    {
+      name: "Monkey Mart",
+      id: "button-monkey-mart",
+      img: "https://abnormal-alt-hosting.netlify.app/placeholder",
+      url: "https://abnormal-hosting.netlify.app/monkeymart/",
+    },
+    {
+      name: "Awesome Tanks 2",
+      id: "button-awesome-tanks-2",
+      img: "https://abnormal-alt-hosting.netlify.app/placeholder",
+      url: "https://abnormal-hosting.netlify.app/awesometanks2/",
+    },
+    {
+      name: "Basketball Stars",
+      id: "button-basketball-stars",
+      img: "https://abnormal-alt-hosting.netlify.app/placeholder",
+      url: "https://abnormal-hosting.netlify.app/basketball-stars/",
+    },
+    {
+      name: "Circloo",
+      id: "button-circloo",
+      img: "https://abnormal-alt-hosting.netlify.app/placeholder",
+      url: "https://abnormal-hosting.netlify.app/circlo/",
+    },
+    {
+      name: "Cluster Rush",
+      id: "button-cluster-rush",
+      img: "https://abnormal-alt-hosting.netlify.app/placeholder",
+      url: "https://abnormal-hosting.netlify.app/cluster-rush/",
+    },
+    
   ];
 
   // Sort games alphabetically
