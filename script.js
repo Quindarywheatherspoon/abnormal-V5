@@ -32,19 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       name: ". Oh Yeah Musa!!!",
-      id: "button-tboi",
+      id: "button-musa-1",
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://musa.com",
     },
     {
       name: ".. Do That UI!!!",
-      id: "button-tboi",
+      id: "button-musa-2",
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://musa.com",
     },
   ];
 
-  // Sort games alphabetically
   games.sort((a, b) => a.name.localeCompare(b.name));
 
   const buttonBox = document.querySelector(".button-box");
@@ -59,20 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const text = document.createElement("p");
     text.textContent = game.name;
 
-button.appendChild(text);
-button.addEventListener("click", () => {
-  const newTab = window.open("about:blank", "_blank");
-  const object = newTab.document.createElement("object");
-  object.data = game.url;
-  object.type = "text/html";
-  object.style.width = "100%";
-  object.style.height = "100vh";
-  object.style.border = "none";
-  newTab.document.body.style.margin = "0";
-  newTab.document.body.style.padding = "0";
-  newTab.document.body.appendChild(object);
-});
-
+    button.appendChild(text);
+    button.addEventListener("click", () => {
+      window.open(game.url, "_blank");
     });
 
     buttonBox.appendChild(button);
