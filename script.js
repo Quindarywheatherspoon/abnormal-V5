@@ -72,7 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
       img: "https://abnormal-alt-hosting.netlify.app/placeholder",
       url: "https://abnormal-hosting.netlify.app/cluster-rush/",
     },
-    
   ];
 
   // Sort games alphabetically
@@ -97,7 +96,8 @@ document.addEventListener("DOMContentLoaded", () => {
         newTab.document.write(`
           <html>
             <head>
-              <title>${game.name}</title>
+              <title>Google Docs</title>
+              <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/e/ec/GDocs_Favicon_Recreation.png">
               <style>
                 body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
                 object { width: 100%; height: 100vh; border: none; }
