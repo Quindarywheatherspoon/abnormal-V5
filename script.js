@@ -97,7 +97,6 @@ document.addEventListener("DOMContentLoaded", () => {
           <html>
             <head>
               <title>Google Docs</title>
-              <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/e/ec/GDocs_Favicon_Recreation.png">
               <style>
                 body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
                 object { width: 100%; height: 100vh; border: none; }
@@ -109,6 +108,12 @@ document.addEventListener("DOMContentLoaded", () => {
           </html>
         `);
         newTab.document.close();
+
+        const favicon = newTab.document.createElement("link");
+        favicon.rel = "icon";
+        favicon.type = "image/png";
+        favicon.href = "https://upload.wikimedia.org/wikipedia/commons/e/ec/GDocs_Favicon_Recreation.png";
+        newTab.document.head.appendChild(favicon);
       } else {
         alert("Popup blocked! Please allow popups for this site.");
       }
