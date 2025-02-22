@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newTab.document.write(`
           <html>
             <head>
-              <title>Google Docs</title>
+              <title>Bell Schedule</title>
               <style>
                 body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
                 object { width: 100%; height: 100vh; border: none; }
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const favicon = newTab.document.createElement("link");
         favicon.rel = "icon";
         favicon.type = "image/png";
-        favicon.href = "https://upload.wikimedia.org/wikipedia/commons/e/ec/GDocs_Favicon_Recreation.png";
+        favicon.href = "https://this-doesnt-even-work.com";
         newTab.document.head.appendChild(favicon);
       } else {
         alert("Popup blocked! Please allow popups for this site.");
