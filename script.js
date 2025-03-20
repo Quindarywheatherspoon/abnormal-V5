@@ -109,12 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://abnormal-hosting.netlify.app/retro-bowl/",
     },
     {
-      name: "Snow Rider 3D",
-      id: "button-snow-rider-3d",
-      img: "https://abnormal-alt-hosting.netlify.app/snow-rider-3d.png",
-      url: "https://abnormal-hosting.netlify.app/snowrider3d/",
-    },
-    {
       name: "Stickman Hook",
       id: "button-stickman-hook",
       img: "https://abnormal-alt-hosting.netlify.app/stickman-hook.jpg",
@@ -139,16 +133,10 @@ document.addEventListener("DOMContentLoaded", () => {
       url: "https://abnormal-hosting.netlify.app/sort-the-court/",
     },
     {
-      name: "Vex 3",
-      id: "button-vex-3",
-      img: "https://abnormal-alt-hosting.netlify.app/vex-3.jpg",
-      url: "https://abnormal-hosting.netlify.app/vex-3/",
-    },
-    {
-      name: "Color Tunnel",
-      id: "button-color-tunnel",
-      img: "https://abnormal-alt-hosting.netlify.app/color-tunnel.png",
-      url: "https://the.deconstructors.co.uk/tam-color-tunnel/",
+      name: "Vex 6",
+      id: "button-vex-6",
+      img: "https://abnormal-alt-hosting.netlify.app/vex-6.jpeg",
+      url: "https://datacrafted.org/gamefiles/vex6/",
     },
     {
       name: "Fruit Ninja",
